@@ -144,10 +144,10 @@ function InfluencerForm() {
         let url
         let method
         if (editData.isEdit) {
-            url = `https://influencer-backend-3ncd.onrender.com/influencer/edit/${editData.influencerId}`
+            url = `https://influencer-backend-37g2.onrender.com/influencer/edit/${editData.influencerId}`
             method = 'PATCH'
         } else {
-            url = 'https://influencer-backend-3ncd.onrender.com/influencer/add'
+            url = 'https://influencer-backend-37g2.onrender.com/influencer/add'
             method = 'POST'
         }
         try {

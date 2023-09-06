@@ -15,7 +15,7 @@ function Card(props) {
     const deleteInfluencer = async () => {
         try {
             loadingSetter(true, false)
-            const response = await fetch(`https://influencer-backend-3ncd.onrender.com/influencer/delete/${influencerId}`, {
+            const response = await fetch(`https://influencer-backend-37g2.onrender.com/influencer/delete/${influencerId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

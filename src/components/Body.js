@@ -29,9 +29,9 @@ function Body() {
         if (sortURL) {
             url = sortURL
         } else if (searchData) {
-            url = `https://influencer-backend-3ncd.onrender.com/influencer/search_influencer?search=${searchData}`
+            url = `https://influencer-backend-37g2.onrender.com/influencer/search_influencer?search=${searchData}`
         } else {
-            url = 'https://influencer-backend-3ncd.onrender.com/influencer/all_influencers'
+            url = 'https://influencer-backend-37g2.onrender.com/influencer/all_influencers'
         }
         try {
             setLoading(true)
@@ -45,7 +45,6 @@ function Body() {
                 throw new Error('Some error occured')
             }
             const data = await response.json()
-            console.log(data)
             if (data.status === 'ok') {
                 setAllInfluencerData(data.influencers)
                 setIsBlur(false)

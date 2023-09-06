@@ -58,9 +58,9 @@ function Navbar() {
                     {isSearch && <button className="rounded-lg bg-green-700 p-1 text-base font-medium text-white" onClick={homeClick}>Home</button>}
                     {!isSearch && <select className="rounded-lg border-2 border-gray-600  cursor-pointer font-medium h-8 pl-1  " name="sort" id="sort" defaultValue="Sort By" onClick={e => e.stopPropagation()} onChange={(e) => {
                         if (e.target.value === 'followers') {
-                            dispatch(SortActions.setSort('https://influencer-backend-3ncd.onrender.com/influencer/sort?sortByName=false&sortByFollowers=true'))
+                            dispatch(SortActions.setSort('https://influencer-backend-37g2.onrender.com/influencer/sort?sortByName=false&sortByFollowers=true'))
                         } else {
-                            dispatch(SortActions.setSort('https://influencer-backend-3ncd.onrender.com/influencer/sort?sortByName=true&sortByFollowers=false'))
+                            dispatch(SortActions.setSort('https://influencer-backend-37g2.onrender.com/influencer/sort?sortByName=true&sortByFollowers=false'))
                         }
                     }}>
                         <option disabled >Sort By</option>
